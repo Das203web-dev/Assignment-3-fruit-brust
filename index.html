@@ -36,13 +36,17 @@
     </script>
     <style>
         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <header class="lg:container lg:mx-auto">
+    <header class="lg:container lg:mx-auto my-10 p-2 w-full">
+        <!-- nav section  -->
         <nav class="bg-primary-bg-color rounded-full text-white">
             <div class="navbar flex justify-between w-full">
                 <div class=" hidden lg:flex flex-1">
@@ -59,7 +63,7 @@
                     <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
 
                     <div
-                        class="hidden lg:flex items-center text-center justify-end md:block focus:border-none rounded-full bg-white text-gray-700 pr-4 relative">
+                        class="hidden md:hidden lg:flex items-center text-center justify-end focus:border-none rounded-full bg-white text-gray-700 pr-4 relative">
                         <input class="rounded-full flex items-center w-full px-4 border-none outline-none" type="text"
                             placeholder="search">
                         <i
@@ -67,8 +71,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-1 justify-end w-full lg:hidden">
-                    <div class="dropdown">
+                <div class="flex flex-1 justify-end w-full lg:hidden text-black">
+                    <div class="dropdown flex justify-end w-1/2">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -77,22 +81,25 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
+                            class=" dropdown-content mt-12 z-[1] px-4 shadow bg-primary-bg-color rounded-box min-w-fit">
+                            <li><a>Home</a></li>
                             <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
+                                <a class="whitespace-nowrap">About Us</a>
+
                             </li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a class="whitespace-nowrap">All Fruits</a></li>
                         </ul>
                     </div>
                     <!-- <a class="btn btn-ghost normal-case text-xl lg:hidden">daisyUI</a> -->
                 </div>
             </div>
         </nav>
+
+        <!-- banner section  -->
+        <div>
+
+        </div>
     </header>
     <main>
 
