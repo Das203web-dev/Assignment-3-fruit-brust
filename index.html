@@ -38,10 +38,39 @@
     </script>
     <style>
         * {
-            /* margin: 0; */
-            /* padding: 0; */
             box-sizing: border-box;
             font-family: 'Lato', sans-serif;
+        }
+
+        .team-section {
+            background-image: url('./images/team.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            /* height: 600px; */
+            position: relative;
+            background-color: black;
+            text-align: center;
+        }
+
+        .team-section::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 99;
         }
     </style>
 </head>
@@ -240,13 +269,11 @@
             </div>
         </div>
 
-
-
     </header>
     <!-- header end  -->
-    <main class="lg:container lg:mx-auto xl:container xl:mx-auto p-4">
+    <main class="lg:container lg:mx-auto xl:container xl:mx-auto p-2">
         <!-- deal of the day section  -->
-        <section>
+        <section class="mb-32">
             <div
                 class="flex flex-col lg:flex-row justify-between lg:gap-60 md:gap-20 gap-2 text-center lg:text-justify mb-12">
                 <div class="flex-1">
@@ -468,14 +495,160 @@
 
             <div class="flex justify-center items-center mt-12">
                 <button
-                    class="btn w-24 h-5 whitespace-nowrap px-4 py-2 bg-primary-bg-color capitalize font-bold text-lg text-white hover:bg-transparent hover:text-primary-bg-color border border-primary-bg-color">Shop
+                    class="btn w-24 h-5 whitespace-nowrap px-4 py-2 bg-primary-bg-color capitalize font-bold text-lg text-white hover:bg-transparent hover:text-primary-bg-color hover:border hover:border-primary-bg-color">Shop
                     All
                 </button>
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!-- team section  -->
+        <section class="relative text-white rounded-lg">
+            <div class="team-section h-[1500px] lg:h-[600px] md:max-h-[900px] rounded-lg lg:py-28 lg:px-40">
+
+            </div>
+            <div class="content w-full p-4 md:p-0 rounded-lg">
+                <div class="mb-12">
+                    <h1 class="font-bold lg:text-5xl md:text-4xl text-2xl mb-6">Meet the team section</h1>
+                    <p class="text-sm md:text-base mx-auto font-medium md:max-w-[500px] lg:max-w-[600px]">Contrary to
+                        popular
+                        belief, is
+                        not simply
+                        random text.
+                        It has roots in
+                        a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+
+                <!-- team member profile card  -->
+                <div class="grid lg:grid-cols-4 gap-10 md:grid-cols-2 grid-cols-1 justify-center items-center">
+                    <!-- card 1  -->
+                    <div>
+                        <img class="mx-auto mb-8" src="images/member1.png" alt="">
+                        <h1 class="text-2xl font-semibold mb-2">
+                            Awlad Hossain
+                        </h1>
+                        <p class="font-medium mb-4">
+                            Fruits Expert
+                        </p>
+                        <div class="icon-div flex justify-center items-center gap-2">
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-twitter"></i>
+
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2  -->
+                    <div>
+                        <img class="mx-auto mb-8" src="images/member2.png" alt="">
+                        <h1 class="text-2xl font-semibold mb-2">
+                            Safia Chowdhury
+                        </h1>
+                        <p class="font-medium mb-4">
+                            Fruits Expert
+                        </p>
+                        <div class="icon-div flex justify-center items-center gap-2">
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-twitter"></i>
+
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3  -->
+                    <div>
+                        <img class="mx-auto mb-8" src="images/member3.png" alt="">
+                        <h1 class="text-2xl font-semibold mb-2">
+                            Rokib Hossain
+                        </h1>
+                        <p class="font-medium mb-4">
+                            Fruits Expert
+                        </p>
+                        <div class="icon-div flex justify-center items-center gap-2">
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-twitter"></i>
+
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4  -->
+                    <div>
+                        <img class="mx-auto mb-8" src="images/member4.png" alt="">
+                        <h1 class="text-2xl font-semibold mb-2">
+                            Chaity
+                        </h1>
+                        <p class="font-medium mb-4">
+                            Fruits Expert
+                        </p>
+                        <div class="icon-div flex justify-center items-center gap-2">
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-twitter"></i>
+
+                            </div>
+                            <div class="bg-primary-bg-color  flex items-center justify-center w-6 h-6 rounded-full">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer space-y-7 footer-center p-10 bg-title-color text-white text-base-content rounded">
+        <div class="flex">
+            <img src="images/logo.png" alt="">
+            <h1>Fruit Brust</h1>
+        </div>
+        <nav class="md:grid md:grid-flow-col flex flex-wrap justify-center items-center whitespace-nowrap gap-10">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruitst</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
     </footer>
 </body>
 
